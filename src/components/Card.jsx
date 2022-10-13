@@ -1,18 +1,19 @@
 import React from "react";
 
-const Card = () => {
+const Card = ({char_id, name, img}) => {
   return (
-    <div className="container-fluid">
-      <div className="row row-cols-2 d-flex justify-content-around">
-        <div className="row d-flex justify-content-center">
-          <h4 className="">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste optio
-            doloremque exercitationem ducimus fuga voluptatibus dolores rerum,
-            debitis aperiam temporibus sunt repellendus ipsa ullam amet
-            explicabo quidem ab culpa voluptatum!
-          </h4>
-          <img />
-        </div>
+    <div className="">
+      <div className="">
+      <div className="">
+            <h4 className="text-center">
+              {char_id} - {name}
+            </h4>
+            <img id="imgCard"
+              className="border border-warning"
+              src={img}
+              alt={name}
+            />
+          </div>
       </div>
     </div>
   );
